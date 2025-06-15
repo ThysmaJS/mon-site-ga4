@@ -2,14 +2,35 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Site GA4 Test</title>
+  <title>Test GA4 - GitHub Pages</title>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PDDR3DHL');
+  </script>
+  <!-- End Google Tag Manager -->
 </head>
 <body>
-  <h1>Bienvenue sur mon site !</h1>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDDR3DHL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <h1>Bienvenue sur mon site GA4 🚀</h1>
+
+  <p>Test de suivi avec Google Analytics 4 et GTM.</p>
+
   <button id="cta">Je m'inscris</button>
-  <form id="contact-form">
-    <input type="text" placeholder="Votre nom">
-    <input type="email" placeholder="Votre email">
+
+  <form id="contact-form" onsubmit="event.preventDefault(); alert('Formulaire soumis !');">
+    <input type="text" placeholder="Votre nom" required>
+    <input type="email" placeholder="Votre email" required>
     <button type="submit">Envoyer</button>
   </form>
 </body>
